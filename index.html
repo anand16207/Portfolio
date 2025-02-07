@@ -6,58 +6,115 @@
   <title>Anand A - Portfolio</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
+      background-color: #0a192f; /* Dark blue background */
+      color: #ccd6f6; /* Light text color */
+      line-height: 1.6;
     }
     header {
-      background-color: #333;
+      background: linear-gradient(135deg, #0a192f, #112240); /* Dark blue gradient */
       color: #fff;
-      padding: 20px;
+      padding: 40px 20px;
       text-align: center;
+      position: relative;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      margin: 10px 0 0;
+      font-size: 1.2em;
+    }
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid #64ffda; /* Neon teal border */
+      margin-top: 20px;
+      transition: transform 0.3s ease;
+    }
+    .profile-pic:hover {
+      transform: scale(1.1);
     }
     nav {
       display: flex;
       justify-content: center;
-      background-color: #444;
+      background-color: #112240; /* Dark blue */
       padding: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
     nav a {
-      color: #fff;
+      color: #64ffda; /* Neon teal */
       text-decoration: none;
       margin: 0 15px;
       font-weight: bold;
+      transition: color 0.3s ease;
     }
     nav a:hover {
-      color: #ff6347;
+      color: #ff6347; /* Neon orange */
     }
     section {
       padding: 20px;
       margin: 20px auto;
       max-width: 800px;
-      background-color: #fff;
+      background-color: #112240; /* Dark blue */
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      border: 2px solid transparent;
+      animation: border-glow 3s infinite alternate;
+    }
+    @keyframes border-glow {
+      0% {
+        border-color: #64ffda; /* Neon teal */
+      }
+      50% {
+        border-color: #ff6347; /* Neon orange */
+      }
+      100% {
+        border-color: #64ffda; /* Neon teal */
+      }
+    }
+    section:hover {
+      transform: translateY(-5px);
     }
     h2 {
-      color: #333;
-      border-bottom: 2px solid #ff6347;
+      color: #64ffda; /* Neon teal */
+      border-bottom: 2px solid #64ffda; /* Neon teal */
       display: inline-block;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
+      font-size: 2em;
     }
     .project, .skill {
       margin-bottom: 20px;
     }
+    .project h3, .skill h3 {
+      color: #ff6347; /* Neon orange */
+      margin-bottom: 10px;
+    }
     footer {
       text-align: center;
-      padding: 10px;
-      background-color: #333;
-      color: #fff;
+      padding: 15px;
+      background-color: #112240; /* Dark blue */
+      color: #64ffda; /* Neon teal */
       position: fixed;
       bottom: 0;
       width: 100%;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    }
+    footer p {
+      margin: 0;
+    }
+    a {
+      color: #64ffda; /* Neon teal */
+      text-decoration: none;
+    }
+    a:hover {
+      color: #ff6347; /* Neon orange */
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -65,6 +122,7 @@
 
   <!-- Header Section -->
   <header>
+    <img src="https://via.placeholder.com/150" alt="Anand A" class="profile-pic">
     <h1>Anand A</h1>
     <p>Web Developer | Designer | Creative Thinker</p>
   </header>
@@ -80,7 +138,7 @@
   <!-- About Me Section -->
   <section id="about">
     <h2>About Me</h2>
-    <p>Hello! I'm Anand A, a passionate web developer and designer with a love for creating clean, functional, and user-friendly websites. I enjoy turning ideas into reality through code and design.</p>
+    <p>Hello! I'm Anand A, a passionate web developer and designer with a love for creating clean, functional, and user-friendly websites. I enjoy turning ideas into reality through code and design. With a strong foundation in both front-end and back-end technologies, I strive to deliver high-quality digital experiences.</p>
   </section>
 
   <!-- Projects Section -->
@@ -105,22 +163,22 @@
     <h2>Skills</h2>
     <div class="skill">
       <h3>Web Development</h3>
-      <p>HTML, CSS, JavaScript, React.js, Node.js, PHP</p>
+      <p>HTML, CSS, JavaScript, Python Django, PHP</p>
     </div>
     <div class="skill">
       <h3>Design</h3>
-      <p>UI/UX Design, Adobe XD, Figma, Photoshop</p>
+      <p>UI/UX Design, Adobe XD, Photoshop</p>
     </div>
     <div class="skill">
       <h3>Tools</h3>
-      <p>Git, VS Code, Docker, Postman</p>
+      <p>Git, VS Code, deepseek R1</p>
     </div>
   </section>
 
   <!-- Contact Section -->
   <section id="contact">
     <h2>Contact</h2>
-    <p>Feel free to reach out to me for collaborations or just to say hellslo!</p>
+    <p>Feel free to reach out to me for collaborations or just to say hello!</p>
     <p>Email: <a href="mailto:anand@example.com">anand@example.com</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/anand-a" target="_blank">linkedin.com/in/anand-a</a></p>
     <p>GitHub: <a href="https://github.com/anand-a" target="_blank">github.com/anand-a</a></p>

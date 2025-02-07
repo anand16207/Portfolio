@@ -2,3 +2,9 @@ Day 1 : 06/02/2025
 
 Learn- html tags and css styles 
 implemented - css style and html
+
+Day 2 : 07/02/2025
+
+learn - html img tag, desgin border with neon coloring
+implemented - added profile picutre , neon border and bg color ect
+challenges - alignment of border and tile alighnmet and fonts
