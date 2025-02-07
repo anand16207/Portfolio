@@ -1,4 +1,4 @@
 Day 1 : 06/02/2025
 
 Learn- html tags and css styles 
-implemented - css style 
+implemented - css style and html
